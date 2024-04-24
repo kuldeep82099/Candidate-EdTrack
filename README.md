@@ -1,10 +1,38 @@
-# Candidate-EdTrack
-EdTrack is a dynamic Student Management System meticulously crafted using Python's Tkinter and MySQL, tailored to streamline the day-to-day operations of educational institutions. Whether it's a small primary school or a sprawling university, EdTrack empowers administrators to effortlessly handle tasks ranging from student registration to examination management.
+# student-management-system
+Student management system project in python
 
-Key Features:
-1️⃣ Seamlessly add new student data.
-2️⃣ Effortlessly view existing student information.
-3️⃣ Swiftly update or modify student records.
-4️⃣ Easily delete student records.
+****Requirements and Installation****
 
-EdTrack's intuitive graphical interface, powered by Tkinter, ensures a user-friendly experience. Meanwhile, PyMySQL efficiently manages all database operations, guaranteeing smooth functionality.
+Use pip3 instead of pip for Linux and Mac.
+
+Install PyMySQL
+☛pip install PyMySQL
+
+Install Tkinter
+☛pip install tk
+
+
+
+****Install MySQL server****
+
+
+
+****Create a Database and a Table****
+
+Create a database with this name: "student_management"
+☛create database student_management;
+
+Create a table "student_register" under the "student_management" database.
+☛create table student_register(
+	f_name VARCHAR(50) NOT NULL,
+	l_name VARCHAR(50) NOT NULL,
+	course VARCHAR(30) NOT NULL,
+	subject VARCHAR(50) NOT NULL,
+	year Int(10) NOT NULL,
+	age Int(10) NOT NULL,
+	gender char(10) NOT NULL,
+	birth DATE NOT NULL,
+	contact VARCHAR(15) NOT NULL,
+	email VARCHAR(100) NOT NULL,
+	PRIMARY KEY ( contact )
+);
